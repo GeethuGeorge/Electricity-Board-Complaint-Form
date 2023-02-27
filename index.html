@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electricity Board Complaint Form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section>
+  <header>
+   <h1>Electricity Board Complaint Form</h1> 
+   <p>Read below instructions before processing: <br>
+  Make sure you fill the where * is provided</p>
+  </header>
+
+
+  <!--FOrm-->
+
+    <form action="">
+  <article>
+    <p>Name</p>
+    <input type="text"  required placeholder="Please enter your name" >
+  </article>
+    
+  <article>
+    <p>Meter ID</p>
+    <input type="number" required value="meterid">
+  </article>
+
+
+    <article>
+    <p>Phone Number</p>
+    <input type="number" min="6000000000" max="9999999999"value="phonenumber" required>
+  </article>
+
+
+    <article>
+    <p>Email ID</p>
+    <input type="emailid" required placeholder="Please enter your email ID">
+  </article>
+
+
+  <article>
+    <p>Address</p>
+    <p>H:No</p>
+    <input type="text" required>
+
+    <p>Street</p>
+    <input type="text" required>
+
+    <p>Area</p>
+    <input type="text" required>
+
+
+<!--list-->
+    <p>District</p>
+      <select name="District" id="district" required>
+             <option value="">Choose</option>
+             <option value="Banglore Urban">Banglore Urban</option>
+             <option value="Bangalore Rural">Bangalore Rural</option>
+             <option value="Ramnagar">Ramnagar</option>
+  
+      </select>
+  </article>
+
+<!--checkbox-->
+  <article>
+    <p>Choose the issue type</p>
+    <p>Check atleast one box without fail</p>
+     <input type="checkbox" id="c1" name="option1" value="overcharge">
+     <label for="c1">Over Charge</label><br>
+     <input type="checkbox" id="c2" name="option2" value="meterboardnotworking">
+     <label for="c2">Meter board not working</label><br>
+     <input type="checkbox" id="c3" name="option3" value="closethemeter">
+     <label for="c2">Close the meter</label><br>
+     <input type="checkbox" id="c4" name="option4" value="hardcopynotprovided">
+     <label for="c3">Hard copy not provided</label><br>
+  </article>
+
+<!--radio-->
+<article>
+  <p>Is this connection less than 2 months old?</p>
+    <input type="radio" id="c5" name="option" value="Yes">
+    <label for="c5">Yes</label><br>
+    <input type="radio" id="c6" name="option" value="No">
+    <label for="c6">No</label><br>
+</article>
+
+<article>
+  <p>Describe your issue </p>
+  <textarea name="description" id="" cols="30" rows="5"></textarea>
+</article>
+
+<article>
+  <p>Whe  are you available</p>
+  <input type="datetime-local" value="datetime-local">
+</article>
+
+<article>
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+</article>
+
+</form>
+
+<!--footer-->
+<footer>
+  This form is developed by Electricity Board.
+</footer>
+</section>
+
+</body>
+</html>
